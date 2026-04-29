@@ -1,0 +1,92 @@
+{
+  "pinnedRepos": [],
+  "hiddenRepos": [".github"],
+  "featuredOverrides": {
+    "DeceptiCloud": {
+      "featured": true,
+      "priority": 1,
+      "customDescription": "AI-Driven Cyber Deception System using adaptive honeypots in cloud environment. 14 honeypot variants, 7-model ML pipeline, LLM adaptive response, blockchain ledger, and full SOC dashboard.",
+      "tags": ["Python", "PyTorch", "Docker", "Kubernetes", "SIEM", "ML", "Cybersecurity"]
+    }
+  },
+  "manualProjects": [
+    {
+      "id": "manual-1",
+      "name": "DeceptiCloud",
+      "description": "AI-Driven Cyber Deception System using adaptive honeypots in cloud environment. 14 honeypot variants, 7-model ML pipeline, WGAN-GP synthetic data, LLM adaptive response (Gemma-3), blockchain ledger & full SOC dashboard.",
+      "topics": ["python", "pytorch", "tensorflow", "docker", "kubernetes", "wazuh-siem", "cybersecurity", "machine-learning", "honeypot", "flask"],
+      "html_url": "https://github.com/ahmed-121174",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "updated_at": "2025-08-01T00:00:00Z",
+      "language": "Python",
+      "featured": true,
+      "isManual": true
+    },
+    {
+      "id": "manual-2",
+      "name": "WebSec-Assessment Tool",
+      "description": "Automated security scanner detecting XSS, SQL injection, open ports, and SSL/TLS vulnerabilities. Built for rapid security auditing of web applications.",
+      "topics": ["python", "cybersecurity", "xss", "sql-injection", "security-tools", "web-security"],
+      "html_url": "https://github.com/ahmed-121174",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "updated_at": "2025-06-01T00:00:00Z",
+      "language": "Python",
+      "featured": true,
+      "isManual": true
+    },
+    {
+      "id": "manual-3",
+      "name": "Multi-Agent Stock Trading System",
+      "description": "AI-driven stock trading simulation using Naive Bayes, K-Means clustering, and a multi-agent framework for autonomous market decision making.",
+      "topics": ["python", "machine-learning", "multi-agent", "naive-bayes", "k-means", "ai", "trading"],
+      "html_url": "https://github.com/ahmed-121174",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "updated_at": "2025-05-01T00:00:00Z",
+      "language": "Python",
+      "featured": true,
+      "isManual": true
+    },
+    {
+      "id": "manual-4",
+      "name": "Auto-Mechanics Platform",
+      "description": "Full-stack web-based vehicle repair platform with PHP, MySQL, and JavaScript. Features booking, mechanic management, and real-time status tracking.",
+      "topics": ["php", "mysql", "javascript", "web-development", "full-stack"],
+      "html_url": "https://github.com/ahmed-121174",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "updated_at": "2024-12-01T00:00:00Z",
+      "language": "PHP",
+      "featured": false,
+      "isManual": true
+    },
+    {
+      "id": "manual-5",
+      "name": "AI-Driven Matrimonial Platform",
+      "description": "Smart matchmaking platform with lightweight ML model and chatbot support for intelligent partner suggestions.",
+      "topics": ["python", "machine-learning", "chatbot", "flask", "ai"],
+      "html_url": "https://github.com/ahmed-121174",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "updated_at": "2025-01-01T00:00:00Z",
+      "language": "Python",
+      "featured": false,
+      "isManual": true
+    },
+    {
+      "id": "manual-6",
+      "name": "Connect-Sphere",
+      "description": "Community engagement application built with Flask and Tkinter. Enables real-time connection between community members.",
+      "topics": ["python", "flask", "tkinter", "community", "web-app"],
+      "html_url": "https://github.com/ahmed-121174",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "updated_at": "2024-10-01T00:00:00Z",
+      "language": "Python",
+      "featured": false,
+      "isManual": true
+    }
+  ]
+}
