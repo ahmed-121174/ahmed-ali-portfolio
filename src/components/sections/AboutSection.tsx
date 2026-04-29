@@ -9,7 +9,6 @@ import {
   FaLinkedin,
   FaInstagram,
   FaEnvelope,
-  FaMapMarkerAlt,
   FaDownload,
 } from "react-icons/fa";
 
@@ -69,7 +68,7 @@ export default function AboutSection() {
               />
 
               {/* Image */}
-              <div className="relative rounded-2xl overflow-hidden border border-white/10 aspect-[4/5]">
+              <div className="relative rounded-2xl overflow-hidden border border-white/10 aspect-[4/5]" style={{position:'relative'}}>
                 <Image
                   src="/Ahmed.png"
                   alt="Ahmed Ali"
