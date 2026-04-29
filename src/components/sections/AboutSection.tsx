@@ -91,9 +91,9 @@ export default function AboutSection() {
               </motion.div>
 
               {/* Language badges */}
-              <div className="absolute -bottom-4 -right-4 glass-card px-4 py-3">
-                <p className="text-xs text-white/40 mb-1 font-mono">Languages</p>
-                <div className="flex gap-2">
+              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[90%] glass-card px-4 py-3 flex items-center justify-between z-10 shadow-xl">
+                <p className="text-[10px] text-white/40 font-mono uppercase tracking-widest hidden sm:block">Languages</p>
+                <div className="flex gap-4 w-full sm:w-auto justify-center">
                   {personalInfo.languages.map((lang) => (
                     <div key={lang.name} className="text-center">
                       <div className="text-xs font-semibold text-white/80">{lang.name}</div>
