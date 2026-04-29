@@ -79,10 +79,18 @@ export default function ContactSection() {
     setErrorMsg("");
 
     try {
-      await emailjs.sendForm(
+      await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        formRef.current!,
+        {
+          from_name: formData.from_name,
+          name: formData.from_name,
+          from_email: formData.from_email,
+          email: formData.from_email,
+          reply_to: formData.from_email,
+          subject: formData.subject,
+          message: formData.message,
+        },
         {
           publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
         }

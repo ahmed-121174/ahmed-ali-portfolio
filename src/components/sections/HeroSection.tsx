@@ -259,7 +259,7 @@ export default function HeroSection() {
                     src="/Ahmed.png"
                     alt="Ahmed Ali"
                     fill
-                    className="object-cover rounded-full"
+                    className="object-cover object-top rounded-full"
                     priority
                     sizes="(max-width: 768px) 224px, 256px"
                   />
@@ -277,9 +277,11 @@ export default function HeroSection() {
 
             {/* Floating skill badges */}
             {[
-              { label: "Python", emoji: "🐍", pos: "-top-4 -right-8" },
-              { label: "Cybersecurity", emoji: "🔒", pos: "-bottom-4 -left-10" },
-              { label: "AI/ML", emoji: "🤖", pos: "top-1/2 -right-14" },
+              { label: "Python", emoji: "🐍", pos: "-top-6 right-4" },
+              { label: "Cybersecurity", emoji: "🔒", pos: "-bottom-6 left-0" },
+              { label: "AI/ML", emoji: "🤖", pos: "top-1/3 -right-20" },
+              { label: "Fullstack Dev", emoji: "💻", pos: "top-10 -left-16" },
+              { label: "Next.js", emoji: "⚛️", pos: "bottom-1/4 -right-16" },
             ].map(({ label, emoji, pos }) => (
               <motion.div
                 key={label}
@@ -298,25 +300,25 @@ export default function HeroSection() {
             ))}
           </motion.div>
         </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.button
-          onClick={scrollToAbout}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 hover:text-white/60 transition-colors"
-          aria-label="Scroll down"
-        >
-          <span className="text-xs font-mono tracking-widest">SCROLL</span>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <FaArrowDown className="w-4 h-4" />
-          </motion.div>
-        </motion.button>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.button
+        onClick={scrollToAbout}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2 }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 hover:text-white/60 transition-colors"
+        aria-label="Scroll down"
+      >
+        <span className="text-[10px] font-mono tracking-widest uppercase">Scroll</span>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <FaArrowDown className="w-3.5 h-3.5" />
+        </motion.div>
+      </motion.button>
     </section>
   );
 }
