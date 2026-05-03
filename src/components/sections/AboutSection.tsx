@@ -73,27 +73,27 @@ export default function AboutSection() {
                   src="/Ahmed.png"
                   alt="Ahmed Ali"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   sizes="(max-width: 768px) 90vw, 400px"
                 />
                 {/* Gradient overlay at bottom */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#03020d] via-transparent to-transparent opacity-60" />
+
+                {/* Status badge — sits inside, top-right corner, fully visible */}
+                <motion.div
+                  animate={{ scale: [1, 1.02, 1] }}
+                  transition={{ duration: 3, repeat: Infinity }}
+                  className="absolute top-3 right-3 glass-card px-3 py-1.5 flex items-center gap-2 z-10"
+                >
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="text-xs font-medium text-white/80">Open to Work</span>
+                </motion.div>
               </div>
 
-              {/* Status badge */}
-              <motion.div
-                animate={{ scale: [1, 1.02, 1] }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="absolute -top-4 -right-4 glass-card px-4 py-2 flex items-center gap-2"
-              >
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="text-xs font-medium text-white/80">Open to Work</span>
-              </motion.div>
-
-              {/* Language badges */}
-              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[90%] glass-card px-4 py-3 flex items-center justify-between z-10 shadow-xl">
-                <p className="text-[10px] text-white/40 font-mono uppercase tracking-widest hidden sm:block">Languages</p>
-                <div className="flex gap-4 w-full sm:w-auto justify-center">
+              {/* Language badges — separate row BELOW the image, no overlap */}
+              <div className="mt-4 glass-card px-5 py-3 flex items-center justify-between">
+                <p className="text-[10px] text-white/40 font-mono uppercase tracking-widest">Languages</p>
+                <div className="flex gap-5">
                   {personalInfo.languages.map((lang) => (
                     <div key={lang.name} className="text-center">
                       <div className="text-xs font-semibold text-white/80">{lang.name}</div>
@@ -105,7 +105,7 @@ export default function AboutSection() {
             </div>
 
             {/* Stats row */}
-            <div className="grid grid-cols-4 gap-3 mt-12">
+            <div className="grid grid-cols-4 gap-3 mt-4">
               {stats.map((stat) => (
                 <motion.div
                   key={stat.label}
@@ -124,7 +124,7 @@ export default function AboutSection() {
             <motion.div variants={itemVariants}>
               <span className="section-label">About Me</span>
               <h2 className="section-title mt-2 mb-6">
-                Passionate Engineer,<br />Relentless Learner
+                Software Engineer,<br />Relentless Learner
               </h2>
             </motion.div>
 
